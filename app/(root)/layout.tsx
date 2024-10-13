@@ -1,4 +1,4 @@
-
+import HeaderBanner from "@/components/HeaderBanner";
 
 export default function RootLayout({
   children,
@@ -6,8 +6,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-        SIDEBAR
+    <main >
+        <HeaderBanner/>
         {children}
     </main>
   );

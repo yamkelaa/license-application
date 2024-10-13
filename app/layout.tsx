@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
 import "./globals.css";
-//RATHER DOWNLOAD THE MONTSERRANT FONT
-
+//RATHER DOWNLOAD THE MONTSERRAT FONT
 const montserrat = Montserrat({
   variable : '--font-montserrat',
-  weight : '500',
-  subsets : ['latin']
+  subsets : ['latin'],
+  display :'swap',
+  weight : ['500']
 })
  
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable}  font-mainFont antialiased`}
       >
         {children}
       </body>
